@@ -30,7 +30,7 @@ pcf: base
 ausf: base
 	docker build --build-arg F5GC_MODULE=ausf -t ${DOCKER_IMAGE_OWNER}/ausf-base:${DOCKER_IMAGE_TAG} -f ./base/Dockerfile.nf ./base
 chf: base
-	docker build --build-arg F5GC_MODULE=chf -t ${DOCKER_IMAGE_OWNER}/chf-base:${DOCKER_IMAGE_TAG} -f ./base/Dockerfile.nf ./base
+	docker build --build-arg F5GC_MODULE=chf -t ${DOCKER_IMAGE_OWNER}/chf-base:CNaaS -f ./base/Dockerfile.nf ./base
 tngf: base
 	docker build --build-arg F5GC_MODULE=tngf -t ${DOCKER_IMAGE_OWNER}/tngf-base:${DOCKER_IMAGE_TAG} -f ./base/Dockerfile.nf ./base
 nef: base

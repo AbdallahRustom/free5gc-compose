@@ -6,7 +6,7 @@ configuration:
   mongodb: # the mongodb connected by this webui
     name: free5gc # name of the mongodb
     url: mongodb://db:27017 # a valid URL of the mongodb
-  nrfUri: http://nrf.free5gc.org:8000 # a valid URI of NRF
+  nrfUri: http://service-enterprise1-slice1-nfmanagement.ns-enterprise1.svc.cluster.local:8080 # a valid URI of NRF
   nrfCertPem: cert/nrf.pem
   webServer:
     scheme: http
@@ -14,7 +14,7 @@ configuration:
     port: 5000
   billingServer:
     enable: true
-    hostIPv4: webui
+    hostIPv4: 172.26.0.253
     listenPort: 2121
     portRange: # passive port range
       start: 2123
